@@ -66,6 +66,7 @@ nav h1 a {
   font-weight: 200;
   letter-spacing: 10px;
   text-transform: uppercase;
+  align-self: center;
 }
 #breadcrumb {
     padding: 10px 40px 16px;
@@ -298,3 +299,21 @@ nav h1 a {
 }
 
 /* ====================== Media Queries ====================== */
+
+@media screen and (max-width: 450px){
+ #restaurants-list li {
+  min-height: 280px;
+  width: 270px;
+  min-width: 200px;
+}
+
+}
+@media screen and (min-width: 750px){
+ nav h1 a {
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+}
+@media screen and (min-width: 850px){
+ 
+}
