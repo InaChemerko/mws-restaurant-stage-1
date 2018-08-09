@@ -83,7 +83,7 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
+    /*width: calc(50% - 80px);*/
 }
 
 /* Display list items side by side */
@@ -301,9 +301,8 @@ nav h1 a {
   position:absolute;
   left:-10000px;
   top:auto;
-  /*width:10px;
-  height:10px;*/
   background-color: red;
+  padding: 15px;
     /*overflow: hidden;*/
   z-index: 100;
 }
@@ -314,20 +313,40 @@ nav h1 a {
 /* ====================== Media Queries ====================== */
 
 @media screen and (max-width: 450px){
- /*#restaurants-list li {
-  min-height: 280px;
-  width: 270px;
-  min-width: 200px;
-}*/
-
+ #restaurants-list p {
+    font-size: 13pt;
+}
+.filter-options h2 {
+    padding-top: 15px;
+}
+#restaurants-list li a {
+    font-size: 12pt;    
+}
 
 }
 @media screen and (min-width: 750px){
+  .filter-options h2 {
+    font-size: 14pt;
+    font-weight: bold;
+}
+.filter-options select {
+     font-size: 14pt;
+   }
+
  nav h1 a {
     font-size: 1.25em;
     letter-spacing: 1px;
 }
 }
 @media screen and (min-width: 850px){
- 
+ #breadcrumb {
+    font-size: 12pt;
+    margin: 0;    
+}
+#reviews-list li p {
+    font-size: 12pt;
+}
+#restaurant-container, #reviews-container {
+  max-width: 80%;
+  }
 }
