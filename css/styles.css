@@ -296,7 +296,21 @@ nav h1 a {
 /*.inside nav{
   max-height:140px;
 }*/
-
+/* ====================== Skip Link ====================== */
+.skip{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  /*width:10px;
+  height:10px;*/
+  background-color: red;
+    /*overflow: hidden;*/
+  z-index: 100;
+}
+.skip:focus{
+  left:0;
+  top:0;
+}
 /* ====================== Media Queries ====================== */
 
 @media screen and (max-width: 450px){
