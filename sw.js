@@ -1,7 +1,7 @@
 let cacheName = 'static-v5'; //set version for cache
 
 const urlsToCache = [ //add files in array to cash 
-    '/index.html'
+    '/index.html',
 	'/restaurant.html',
 	'data/restaurants.json',
 	'css/styles.css',
