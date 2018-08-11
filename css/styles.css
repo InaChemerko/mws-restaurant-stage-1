@@ -69,14 +69,7 @@ nav h1 a {
   text-transform: uppercase;
   align-self: center;
 }
-/*.inside nav h1 a {
-  color: #fff;
-  font-size: 24pt;
-  font-weight: 200;
-  letter-spacing: 15px;
-  text-transform: uppercase;
-  align-self: center;
-}*/
+
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
@@ -166,7 +159,6 @@ nav h1 a {
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
   margin: 15px;
-  /*min-height: 380px;*/  
   padding: 0 30px 15px;
   text-align: left;
   width: 270px;
@@ -175,7 +167,6 @@ nav h1 a {
   display: block;
   margin: 0;
   max-width: 100%;
-  /*min-height: 248px;*/
   min-width: 100%;
   padding-top: 10px;
 }
@@ -214,14 +205,12 @@ nav h1 a {
 }
 
 .inside header {
-  /*position: fixed;*/
   top: 0;
   width: 100%;
   z-index: 1000;
 }
 
 .inside #map {
-  /*height: 500px;*/
   justify-content: center;
 }
 
@@ -293,9 +282,7 @@ nav h1 a {
 #reviews-list li p {
   margin: 0 0 10px;
 }
-/*.inside nav{
-  max-height:140px;
-}*/
+
 /* ====================== Skip Link ====================== */
 .skip{
   position:absolute;
@@ -303,7 +290,6 @@ nav h1 a {
   top:auto;
   background-color: red;
   padding: 15px;
-    /*overflow: hidden;*/
   z-index: 100;
 }
 .skip:focus{

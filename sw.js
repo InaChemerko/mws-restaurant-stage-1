@@ -1,6 +1,6 @@
-let cacheName = 'static-v5';
+let cacheName = 'static-v5'; //set version for cache
 
-const urlsToCache = [
+const urlsToCache = [ //add files in array to cash 
     '/index.html'
 	'/restaurant.html',
 	'data/restaurants.json',
@@ -20,20 +20,20 @@ const urlsToCache = [
 	'img/10.jpg'
 	];
 
-self.addEventListener('install', function(event) {
+self.addEventListener('install', function(event) { //Install service worker and cache files
   event.waitUntil(caches.open(cacheName).then(function(cache) {
       return cache.addAll(urlsToCache);
-    }).catch(function(error){
+    }).catch(function(error){ //if we have error
     	console.log('Inastall error');
     })
   );
 });
 
 
-self.addEventListener('fetch', function(event) {
+self.addEventListener('fetch', function(event) { //"fetch" cached files, fall back on the network
 	event.respondWith(caches.match(event.request).then(function(response) {
 		return response || fetch(event.request);
-	}).catch(function(error) {
+	}).catch(function(error) { //if we have error
 		console.log('There is error', error);
 	}));
 });
