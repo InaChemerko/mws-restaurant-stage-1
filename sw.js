@@ -23,17 +23,16 @@ const urlsToCache = [ //add files in array to cash
 self.addEventListener('install', function(event) { //Install service worker and cache files
   event.waitUntil(caches.open(cacheName).then(function(cache) {
       return cache.addAll(urlsToCache);
-    }).catch(function(error){ //if we have error
+    }).catch(function(error){ //we have error
     	console.log('Inastall error');
     })
   );
 });
 
-
 self.addEventListener('fetch', function(event) { //"fetch" cached files, fall back on the network
 	event.respondWith(caches.match(event.request).then(function(response) {
 		return response || fetch(event.request);
-	}).catch(function(error) { //if we have error
+	}).catch(function(error) { //we have error
 		console.log('There is error', error);
 	}));
 });
